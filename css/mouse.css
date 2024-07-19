@@ -1,0 +1,28 @@
+/*普通鼠标样式*/
+body {
+    cursor: url(/css/default.cur),
+    default;
+}
+a,
+img {
+    cursor: url(/css/pointer.cur),
+    default;
+}
+/*普通鼠标样式*/
+
+/*滑稽鼠标样式*/
+/*body {*/
+/*    cursor: url(https://bu.dusays.com/2022/05/17/6283c365d20dd.png), auto;*/
+/*}*/
+
+/*.hide-block>.hide-button.open,*/
+/*.hide-inline>.hide-button.open {*/
+/*    display: block*/
+/*}*/
+
+/*a,*/
+/*button,*/
+/*img {*/
+/*    cursor: url(https://bu.dusays.com/2022/05/17/6283c376afcfc.png), auto*/
+/*}*/
+/*滑稽鼠标样式*/
