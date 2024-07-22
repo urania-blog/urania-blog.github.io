@@ -6,7 +6,10 @@
     <content><![CDATA[<h1 id="blog-init"><a href="#blog-init" class="headerlink" title="blog init"></a>blog init</h1><blockquote>
 <p>针对blog初始化会有一堆流程，为了省去不必要的麻烦，可以直接使用我发的压缩包</p>
 </blockquote>
-<h2 id="如果使用压缩包"><a href="#如果使用压缩包" class="headerlink" title="如果使用压缩包"></a>如果使用压缩包</h2><blockquote>
+<h2 id="压缩包解压"><a href="#压缩包解压" class="headerlink" title="压缩包解压"></a>压缩包解压</h2><h2 id="下载依赖"><a href="#下载依赖" class="headerlink" title="下载依赖"></a>下载依赖</h2><blockquote>
+<p>项目根目录下，使用CMD执行<code>npm install</code></p>
+</blockquote>
+<h2 id="替换账户"><a href="#替换账户" class="headerlink" title="替换账户"></a>替换账户</h2><blockquote>
 <p>全局替换<code>urania-blog</code>为<code>你的github账户名称</code></p>
 </blockquote>
 <h1 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h1><blockquote>
@@ -17,7 +20,8 @@
 <h1 id="开启github-blog的pages功能"><a href="#开启github-blog的pages功能" class="headerlink" title="开启github blog的pages功能"></a>开启github blog的pages功能</h1><h2 id="进入github-仓库的settings项"><a href="#进入github-仓库的settings项" class="headerlink" title="进入github 仓库的settings项"></a>进入github 仓库的settings项</h2><blockquote>
 <p>如未开启pages，右侧会显示要你开启</p>
 </blockquote>
-<p><img src="/blog%E4%B8%8A%E4%BC%A0/image-20240722150956640.png" alt="image-20240722150956640"></p>
+<img src="/2024/07/22/blog%E4%B8%8A%E4%BC%A0/image-20240722150956640.png" class="" title="image-20240722150956640">
+
 <h2 id="配置私钥"><a href="#配置私钥" class="headerlink" title="配置私钥"></a>配置私钥</h2><blockquote>
 <p>CMD下执行<code>ssh-keygen -t rsa -C &quot;&lt;yourEmailAddr&gt;&quot; -b 2048</code></p>
 <p>一路默认即可</p>
@@ -26,11 +30,13 @@
 <blockquote>
 <p>找到<code>id_rsa.pub</code>文件，记事本打开并复制里面的内容，下一步会用到</p>
 </blockquote>
-<p><img src="/blog%E4%B8%8A%E4%BC%A0/image-20240722151234951.png" alt="image-20240722151234951"></p>
+<img src="/2024/07/22/blog%E4%B8%8A%E4%BC%A0/image-20240722151234951.png" class="" title="image-20240722151234951">
+
 <h2 id="添加公钥信息"><a href="#添加公钥信息" class="headerlink" title="添加公钥信息"></a>添加公钥信息</h2><blockquote>
 <p>将上步复制信息，添加下图指引的地方【名称随意填】</p>
 </blockquote>
-<p><img src="/blog%E4%B8%8A%E4%BC%A0/image-20240722151401275.png" alt="image-20240722151401275"></p>
+<img src="/2024/07/22/blog%E4%B8%8A%E4%BC%A0/image-20240722151401275.png" class="" title="image-20240722151401275">
+
 <h1 id="博客上传"><a href="#博客上传" class="headerlink" title="博客上传"></a>博客上传</h1><blockquote>
 <p>CMD下执行<code>npm run kk</code>，上传blog到你的github仓库下</p>
 </blockquote>
@@ -95,7 +101,8 @@
 <blockquote>
 <p>进入如下页面</p>
 </blockquote>
-<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142153812.png" alt="image-20240722142153812"></p>
+<img src="/2024/07/22/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142153812.png" class="" title="image-20240722142153812">
+
 <h1 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h1><ul>
 <li>点击Sign Up</li>
 </ul>
@@ -105,20 +112,23 @@
 <ul>
 <li>成功注册账户后，见如下页面，进行登录</li>
 </ul>
-<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142329731.png" alt="image-20240722142329731"></p>
+<img src="/2024/07/22/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142329731.png" class="" title="image-20240722142329731">
+
 <ul>
 <li>目前新账户不确定是否还要求<strong>2FA</strong>验证【如下】，如果需要，下载一个软件，叫 <strong>FREE OTP</strong>，然后按流程操作下即可</li>
 </ul>
-<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142552444.png" alt="image-20240722142552444"></p>
-<h1 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h1><h2 id="进入主界面"><a href="#进入主界面" class="headerlink" title="进入主界面"></a>进入主界面</h2><p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142736095.png" alt="image-20240722142736095"></p>
+<img src="/2024/07/22/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142552444.png" class="" title="image-20240722142552444">
+
+<h1 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h1><h2 id="进入主界面"><a href="#进入主界面" class="headerlink" title="进入主界面"></a>进入主界面</h2><img src="/2024/07/22/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142736095.png" class="" title="image-20240722142736095">
+
 <h2 id="新建仓库-1"><a href="#新建仓库-1" class="headerlink" title="新建仓库"></a>新建仓库</h2><blockquote>
 <p>仓库名称的格式为：<code>&lt;github账户名&gt;.github.io</code></p>
 </blockquote>
-<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142846419.png" alt="image-20240722142846419"></p>
+<img src="/2024/07/22/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142846419.png" class="" title="image-20240722142846419">
+
 <h2 id="创建成功"><a href="#创建成功" class="headerlink" title="创建成功"></a>创建成功</h2><blockquote>
 <p>图片效果图</p>
 </blockquote>
-<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722144726404.png" alt="image-20240722144726404"></p>
-]]></content>
+<img src="/2024/07/22/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722144726404.png" class="" title="image-20240722144726404">]]></content>
   </entry>
 </search>
