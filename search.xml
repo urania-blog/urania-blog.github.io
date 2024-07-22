@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>blog上传</title>
+    <url>/2024/07/22/blog%E4%B8%8A%E4%BC%A0/</url>
+    <content><![CDATA[<h1 id="blog-init"><a href="#blog-init" class="headerlink" title="blog init"></a>blog init</h1><blockquote>
+<p>针对blog初始化会有一堆流程，为了省去不必要的麻烦，可以直接使用我发的压缩包</p>
+</blockquote>
+<h2 id="如果使用压缩包"><a href="#如果使用压缩包" class="headerlink" title="如果使用压缩包"></a>如果使用压缩包</h2><blockquote>
+<p>全局替换<code>urania-blog</code>为<code>你的github账户名称</code></p>
+</blockquote>
+<h1 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h1><blockquote>
+<p>建议使用typora</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<h1 id="开启github-blog的pages功能"><a href="#开启github-blog的pages功能" class="headerlink" title="开启github blog的pages功能"></a>开启github blog的pages功能</h1><h2 id="进入github-仓库的settings项"><a href="#进入github-仓库的settings项" class="headerlink" title="进入github 仓库的settings项"></a>进入github 仓库的settings项</h2><blockquote>
+<p>如未开启pages，右侧会显示要你开启</p>
+</blockquote>
+<p><img src="/blog%E4%B8%8A%E4%BC%A0/image-20240722150956640.png" alt="image-20240722150956640"></p>
+<h2 id="配置私钥"><a href="#配置私钥" class="headerlink" title="配置私钥"></a>配置私钥</h2><blockquote>
+<p>CMD下执行<code>ssh-keygen -t rsa -C &quot;&lt;yourEmailAddr&gt;&quot; -b 2048</code></p>
+<p>一路默认即可</p>
+</blockquote>
+<p>私钥和公钥信息会在<code>C:/&#123;你的windows账户名&#125;/.ssh</code>下生成</p>
+<blockquote>
+<p>找到<code>id_rsa.pub</code>文件，记事本打开并复制里面的内容，下一步会用到</p>
+</blockquote>
+<p><img src="/blog%E4%B8%8A%E4%BC%A0/image-20240722151234951.png" alt="image-20240722151234951"></p>
+<h2 id="添加公钥信息"><a href="#添加公钥信息" class="headerlink" title="添加公钥信息"></a>添加公钥信息</h2><blockquote>
+<p>将上步复制信息，添加下图指引的地方【名称随意填】</p>
+</blockquote>
+<p><img src="/blog%E4%B8%8A%E4%BC%A0/image-20240722151401275.png" alt="image-20240722151401275"></p>
+<h1 id="博客上传"><a href="#博客上传" class="headerlink" title="博客上传"></a>博客上传</h1><blockquote>
+<p>CMD下执行<code>npm run kk</code>，上传blog到你的github仓库下</p>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2024/07/19/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -16,6 +52,73 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>安装必要组件</title>
+    <url>/2024/07/22/%E5%AE%89%E8%A3%85%E5%BF%85%E8%A6%81%E7%BB%84%E4%BB%B6/</url>
+    <content><![CDATA[<blockquote>
+<p>注：以下安装流程都是在你当前操作系统是Windows的前提下进行的</p>
+</blockquote>
+<h1 id="Nodejs"><a href="#Nodejs" class="headerlink" title="Nodejs"></a>Nodejs</h1><h2 id="安装程序"><a href="#安装程序" class="headerlink" title="安装程序"></a>安装程序</h2><p>安装程序地址：<a href="https://nodejs.org/zh-cn/download/prebuilt-installer">https://nodejs.org/zh-cn/download/prebuilt-installer</a></p>
+<blockquote>
+<p>一步一步装即可，不要放在带有中文的路径下</p>
+</blockquote>
+<h2 id="配置国内源"><a href="#配置国内源" class="headerlink" title="配置国内源"></a>配置国内源</h2><p>进入CMD（搜索种输入cmd，第一个结果点击进入），执行以下指令</p>
+<blockquote>
+<p>npm set registry&#x3D;<a href="https://registry.npmmirror.com/">https://registry.npmmirror.com</a></p>
+</blockquote>
+<h2 id="测试安装成功与否"><a href="#测试安装成功与否" class="headerlink" title="测试安装成功与否"></a>测试安装成功与否</h2><blockquote>
+<p>node -v</p>
+</blockquote>
+<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h2 id="安装Hexo-cli"><a href="#安装Hexo-cli" class="headerlink" title="安装Hexo-cli"></a>安装Hexo-cli</h2><p>进入CMD（搜索种输入cmd，第一个结果点击进入），执行以下指令</p>
+<blockquote>
+<p>npm install hexo-cli -g</p>
+</blockquote>
+<h2 id="测试安装成功与否-1"><a href="#测试安装成功与否-1" class="headerlink" title="测试安装成功与否"></a>测试安装成功与否</h2><blockquote>
+<p>hexo -v</p>
+</blockquote>
+<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><h2 id="安装程序-1"><a href="#安装程序-1" class="headerlink" title="安装程序"></a>安装程序</h2><p>地址：<a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
+<p>如果上面这个进不去，试试这个：<a href="https://gitforwindows.org/">https://gitforwindows.org/</a></p>
+<blockquote>
+<p>下载64位的，然后一路默认安装即可，依旧记住不要安装在带有中文目录下</p>
+</blockquote>
+<h2 id="测试安装成功与否-2"><a href="#测试安装成功与否-2" class="headerlink" title="测试安装成功与否"></a>测试安装成功与否</h2><blockquote>
+<p>git -v</p>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
+    <title>github账户创建以及仓库创建</title>
+    <url>/2024/07/22/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/</url>
+    <content><![CDATA[<h1 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h1><p>地址：<a href="https://github.com/">https://github.com/</a></p>
+<blockquote>
+<p>进入如下页面</p>
+</blockquote>
+<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142153812.png" alt="image-20240722142153812"></p>
+<h1 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h1><ul>
+<li>点击Sign Up</li>
+</ul>
+<blockquote>
+<p>按步骤一步一步填写信息</p>
+</blockquote>
+<ul>
+<li>成功注册账户后，见如下页面，进行登录</li>
+</ul>
+<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142329731.png" alt="image-20240722142329731"></p>
+<ul>
+<li>目前新账户不确定是否还要求<strong>2FA</strong>验证【如下】，如果需要，下载一个软件，叫 <strong>FREE OTP</strong>，然后按流程操作下即可</li>
+</ul>
+<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142552444.png" alt="image-20240722142552444"></p>
+<h1 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h1><h2 id="进入主界面"><a href="#进入主界面" class="headerlink" title="进入主界面"></a>进入主界面</h2><p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142736095.png" alt="image-20240722142736095"></p>
+<h2 id="新建仓库-1"><a href="#新建仓库-1" class="headerlink" title="新建仓库"></a>新建仓库</h2><blockquote>
+<p>仓库名称的格式为：<code>&lt;github账户名&gt;.github.io</code></p>
+</blockquote>
+<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722142846419.png" alt="image-20240722142846419"></p>
+<h2 id="创建成功"><a href="#创建成功" class="headerlink" title="创建成功"></a>创建成功</h2><blockquote>
+<p>图片效果图</p>
+</blockquote>
+<p><img src="/%E6%96%B0%E5%BB%BAgithub%E8%B4%A6%E6%88%B7/image-20240722144726404.png" alt="image-20240722144726404"></p>
 ]]></content>
   </entry>
 </search>
